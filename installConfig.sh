@@ -87,6 +87,7 @@ casks=(
   virtualbox
 # Other stuff
   vlc
+  slack
   google-chrome
   firefox
   seashore
