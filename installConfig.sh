@@ -41,7 +41,7 @@ binaries=(
   tree
   ack
   python
-  r
+  ansible
 )
 echo "### installing binaries..."
 brew install ${binaries[@]}
