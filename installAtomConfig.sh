@@ -7,6 +7,7 @@ atomlibs=(
   linter-tidy
   linter-js-yaml
   linter-csslint
+  pigments
 )
 echo "### installing atom extensions..."
-pip install ${atomlibs[@]}
+apm install ${atomlibs[@]}
