@@ -42,6 +42,7 @@ binaries=(
   ack
   python
   ansible
+  tidy-html5
 )
 echo "### installing binaries..."
 brew install ${binaries[@]}
