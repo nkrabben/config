@@ -23,6 +23,7 @@ pylibs=(
   Pillow
   virtualenv
   nose
+  pylint
 # analysis libs
   numpy
   scipy
