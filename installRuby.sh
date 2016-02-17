@@ -4,8 +4,7 @@
 brew install rbenv ruby-build
 
 # Add rbenv to bash so that it loads every time you open a terminal
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-source ~/.bash_profile
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 
 # Install Ruby
 rbenv install 2.2.3
