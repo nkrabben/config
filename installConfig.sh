@@ -37,10 +37,13 @@ binaries=(
   bagit
   graphicsmagick
   ffmpeg
+  mediainfo
   trash
   tree
   ack
   python
+  ruby-build
+  rbenv
   ansible
   tidy-html5
 )
