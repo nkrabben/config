@@ -1,6 +1,3 @@
-
-autoload colors
-colors
 echo "### setting up binaries and applications..."
 echo "### ..."
 echo "### ..."
