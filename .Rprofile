@@ -1,6 +1,8 @@
 local({r <- getOption("repos")
-      r["CRAN"] <- "https://cran.us.r-project.org"
+      r["CRAN"] <- "https://cloud.r-project.org/"
       options(repos=r)})
+
+.libPaths("~/.rLibs")
 
 options(stringsAsFactors=FALSE)
 
@@ -20,6 +22,14 @@ options(width = 80)
 utils::rc.settings(ipck=TRUE)
 
 .First <- function(){
+  source("~/.config/rBase.r")
+
+  # Optionally load up toolkit profiles for each R programming paradigm.
+  cat("Profiles Available: None yet")
+  #Shiny <<- function() source("~/.config/shiny.R")
+  #Sim <<- function() source("~/.config/simulation.R")
+  #Concerto <<- function() source("~/.config/concerto.R")
+
   if(interactive()){
     library(utils)
     timestamp(,prefix=paste("##------ [",getwd(),"] ",sep=""))
@@ -43,7 +53,7 @@ sshhh <- function(a.package){
     library(a.package, character.only=TRUE)))
 }
 
-auto.loads <-c("dplyr", "ggplot2")
+auto.loads <-c("rio", "plyr", "dplyr", "ggplot2")
 
 if(interactive()){
   invisible(sapply(auto.loads, sshhh))
@@ -63,4 +73,4 @@ attach(.env)
   df
 }
 
-message("n*** Successfully loaded .Rprofile ***n")
+message("*** Successfully loaded .Rprofile ***")
