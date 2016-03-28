@@ -82,6 +82,7 @@ casks=(
   google-drive
   the-unarchiver
 # Dev
+  hexfiend
   iterm2
   java
   rstudio
