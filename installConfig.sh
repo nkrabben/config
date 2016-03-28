@@ -39,10 +39,12 @@ binaries=(
   tree
   ack
   python
+  python3
   ruby-build
   rbenv
   ansible
   tidy-html5
+  wget
 )
 echo "### installing binaries..."
 brew install ${binaries[@]}
@@ -68,7 +70,6 @@ casks=(
   webpquicklook
 # Workflow stuff
   alfred
-  spectacle
   flux
   day-o
 # Editors
