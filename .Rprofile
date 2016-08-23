@@ -22,7 +22,7 @@ options(width = 80)
 utils::rc.settings(ipck=TRUE)
 
 .First <- function(){
-  source("~/.config/rBase.r")
+  #source("~/.config/rBase.r")
 
   # Optionally load up toolkit profiles for each R programming paradigm.
   cat("Profiles Available: None yet")
@@ -47,17 +47,6 @@ utils::rc.settings(ipck=TRUE)
 
 if(Sys.getenv("TERM") == "xterm-256color")
   library("colorout")
-
-sshhh <- function(a.package){
-  suppressWarnings(suppressPackageStartupMessages(
-    library(a.package, character.only=TRUE)))
-}
-
-auto.loads <-c("rio", "plyr", "dplyr", "ggplot2")
-
-if(interactive()){
-  invisible(sapply(auto.loads, sshhh))
-}
 
 .env <- new.env()
 attach(.env)

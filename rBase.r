@@ -1,6 +1,4 @@
-cat("Base packages")
-library(devtools)
-library(rio)
-library(plyr)
-library(dplyr)
-library(ggplot2)
+cat("Base packages\ndevtools\nrio\nplyr\ndplyr\nggplot2")
+options(defaultPackages=c(getOption("defaultPackages"),
+                          "devtools", "rio", "plyr", "dplyr",
+                          "ggplot2"))
